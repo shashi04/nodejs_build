@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-build-test",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "echo 'Building project...' && mkdir -p dist && cp -r src/* dist/",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
